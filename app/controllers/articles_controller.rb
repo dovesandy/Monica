@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
 	
 	end
 	
+	#创建
 	def create
 		render plain: params[:article].inspect	
 	end
