@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+# chongsen
+This is a simple Web
+#development for github
+=======
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +27,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+>>>>>>> master
