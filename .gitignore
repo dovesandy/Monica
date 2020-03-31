@@ -5,19 +5,19 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+/Ruby/RubyOnRailsDemo/.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+/Ruby/RubyOnRailsDemo/db/*.sqlite3
+/Ruby/RubyOnRailsDemo/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/Ruby/RubyOnRailsDemo/log/*
+/Ruby/RubyOnRailsDemo/tmp/*
+!/Ruby/RubyOnRailsDemo/log/.keep
+!/Ruby/RubyOnRailsDemo/tmp/.keep
 
-/node_modules
-/yarn-error.log
+/Ruby/RubyOnRailsDemo/node_modules
+/Ruby/RubyOnRailsDemo/yarn-error.log
 
-.byebug_history
+/Ruby/RubyOnRailsDemo/.byebug_history

@@ -1,0 +1,33 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<mata charset="UTF-8">
+	<title>02-v-cloak解决插值表达式的闪动问题</title>
+	<script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div v-cloack>{{msg}}</div>
+	</div>
+	<script type="text/javascript">
+		/*
+			v-cloak指令用法b
+			1、提供样式
+			[v-cloak]{
+				display: none;
+			}
+
+			2、在插值表达式所在的标签中添加v-cloak指令
+			背后的原理：先通过样式隐藏内容，然后在内存中进行值的替换，替换好后再显示最终结果	
+		*/
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				msg: "Hello World! Welcome to Vue!"
+
+			}
+
+		})
+	</script>
+</body>
+</html>

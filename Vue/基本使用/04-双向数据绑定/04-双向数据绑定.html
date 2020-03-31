@@ -1,0 +1,27 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<mata charset="UTF-8">
+	<title>04-双向数据绑定</title>
+	<script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<!-- {{}} 插值表达式-->
+		<div>{{msg}}</div>
+		<input type="text" name="" v-model="msg">
+	</div>
+	<script type="text/javascript">
+		var vm = new Vue({
+			// el 元素的挂载位置，值为CSS选择器或者为DOM元素
+			el: "#app",
+			// data 模型数据，值为一个对象
+			data: {
+				msg: "Hello Vue!"
+
+			}
+
+		})
+	</script>
+</body>
+</html>
