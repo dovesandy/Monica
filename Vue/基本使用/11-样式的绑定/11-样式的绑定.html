@@ -1,0 +1,67 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<mata charset="UTF-8">
+	<title>11-样式的绑定</title>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<style type="text/css">
+		.active {
+			width: 100px;
+			height: 100px;
+			border: 1px solid blue;
+		}
+		.red{
+			background-color: red;
+		}
+		.word{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div v-bind:class="{active: isActive, red: isRed}"></div>
+		<button v-on:click='handle'>切换</button>
+		<button @click="handleRed">切换为红色</button>
+		<div class="word" v-bind:class="[active, red]">文字的大小</div>
+		<button v-on:click='handle1'>切换</button>
+		<div v-bind:style="objStyles">文字的大小</div>
+		<button v-on:click='handle2'>切换</button>
+	</div>
+	<script type="text/javascript">
+		var vm = new Vue({
+			// el 元素的挂载位置，值为CSS选择器或者为DOM元素
+			el: "#app",
+			// data 模型数据，值为一个对象
+			data: {
+				isActive: true,
+				isRed: false,
+				active: 'active',
+				red: "red",
+				objStyles: {
+					border: '1px solid red',
+					width: "150px",
+					height: "150px"
+				}
+
+
+			},
+			methods: {
+				handle: function(event){
+					this.isActive = !this.isActive;
+				},
+				handleRed: function(){
+					this.isRed = !this.isRed;
+				},
+				handle1: function(event){
+					this.red = "";
+				},
+				handle2: function(event){
+					this.objStyles.width = "100px";
+				}
+			}
+
+		})
+	</script>
+</body>
+</html>

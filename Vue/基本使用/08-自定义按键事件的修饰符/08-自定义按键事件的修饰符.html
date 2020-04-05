@@ -1,0 +1,46 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<mata charset="UTF-8">
+	<title>08-自定义事件的修饰符</title>
+	<script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div>
+			打印按键的值：
+			<input type="text" name="" v-on:keyup='handle' v-model='info'>
+		</div>
+		<div>
+			当按键为f时候才打印按键的值：
+			<input type="text" name="" v-on:keyup.70='handle' v-model='info1'>
+		</div>
+		<div>
+			当按键为f时候才打印按键的值第二种方法：
+			<input type="text" name="" v-on:keyup.f='handle' v-model='info2'>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		Vue.config.keyCodes.f = 70;
+		var vm = new Vue({
+			// el 元素的挂载位置，值为CSS选择器或者为DOM元素
+			el: "#app",
+			// data 模型数据，值为一个对象
+			data: {
+				info: "",
+				info1: "",
+				info2: ""
+
+			},
+			methods:{
+				// 打印按键的值
+				handle: function(event){
+					console.log(event.keyCode);
+				}
+			}
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<mata charset="UTF-8">
+	<title>07-事件的修饰符</title>
+	<script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<form action="">
+			<div>
+				用户名：
+				<input type="text" name="" v-on:keyup.delete="clearContent()" v-model="uname">
+			</div>
+			<div>
+				密码：
+				<input type="text" name="" v-on:keyup.enter="handleSubmit()" v-model="pwd">
+			</div>
+			<div>
+				<input type="button" name="" v-on:click="handleSubmit()" value="提交">
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		var vm = new Vue({
+			// el 元素的挂载位置，值为CSS选择器或者为DOM元素
+			el: "#app",
+			// data 模型数据，值为一个对象
+			data: {
+				uname: "",
+				pwd: ""
+
+			},
+			methods:{
+				clearContent: function () {
+					// 按delete键清空用户名
+					this.uname = "";
+				},
+				handleSubmit: function(){
+					console.info(this.uname,this.pwd);
+				}
+			}
+
+		})
+	</script>
+</body>
+</html>
