@@ -48,3 +48,8 @@
 /vue-element-demo/*.sln
 /vue-element-demo/*.sw?
 /vue-element-demo/package-lock.json
+
+# hkvVideoVue
+
+/hikvisionVideo/webVideoCtrl/hkvVideoVue/node_modules
+/hikvisionVideo/webVideoCtrl/hkvVideoVue/package-lock.json
