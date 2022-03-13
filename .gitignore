@@ -40,6 +40,7 @@
 /Vue/vue-element-demo/yarn-error.log*
 
 # Editor directories and files
+<<<<<<< HEAD
 /Vue/vue-element-demo/.idea
 /Vue/vue-element-demo/.vscode
 /Vue/vue-element-demo/*.suo
@@ -48,3 +49,18 @@
 /Vue/vue-element-demo/*.sln
 /Vue/vue-element-demo/*.sw?
 /Vue/vue-element-demo/package-lock.json
+=======
+/vue-element-demo/.idea
+/vue-element-demo/.vscode
+/vue-element-demo/*.suo
+/vue-element-demo/*.ntvs*
+/vue-element-demo/*.njsproj
+/vue-element-demo/*.sln
+/vue-element-demo/*.sw?
+/vue-element-demo/package-lock.json
+
+# hkvVideoVue
+
+/hikvisionVideo/webVideoCtrl/hkvVideoVue/node_modules
+/hikvisionVideo/webVideoCtrl/hkvVideoVue/package-lock.json
+>>>>>>> be913e4ff80bb2314054366e47d1b3f6baf84ced
