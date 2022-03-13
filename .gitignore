@@ -26,25 +26,25 @@
 
 # /vue-element-demo/
 
-/vue-element-demo/.DS_Store
-/vue-element-demo/node_modules
-/vue-element-demo/dist
+/Vue/vue-element-demo/.DS_Store
+/Vue/vue-element-demo/node_modules
+/Vue/vue-element-demo/dist
 
 # local env files
-/vue-element-demo/.env.local
-/vue-element-demo/.env.*.local
+/Vue/vue-element-demo/.env.local
+/Vue/vue-element-demo/.env.*.local
 
 # Log files
-/vue-element-demo/npm-debug.log*
-/vue-element-demo/yarn-debug.log*
-/vue-element-demo/yarn-error.log*
+/Vue/vue-element-demo/npm-debug.log*
+/Vue/vue-element-demo/yarn-debug.log*
+/Vue/vue-element-demo/yarn-error.log*
 
 # Editor directories and files
-/vue-element-demo/.idea
-/vue-element-demo/.vscode
-/vue-element-demo/*.suo
-/vue-element-demo/*.ntvs*
-/vue-element-demo/*.njsproj
-/vue-element-demo/*.sln
-/vue-element-demo/*.sw?
-/vue-element-demo/package-lock.json
+/Vue/vue-element-demo/.idea
+/Vue/vue-element-demo/.vscode
+/Vue/vue-element-demo/*.suo
+/Vue/vue-element-demo/*.ntvs*
+/Vue/vue-element-demo/*.njsproj
+/Vue/vue-element-demo/*.sln
+/Vue/vue-element-demo/*.sw?
+/Vue/vue-element-demo/package-lock.json
