@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C++ Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/../build/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "build",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing",
+          "text": "type format add --format value --value-string \"${var}\" --summary-string \"${var}\"",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

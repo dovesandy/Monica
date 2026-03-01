@@ -1,0 +1,21 @@
+{
+  "LimitMinutes": 30,
+  "DegradeMinutes": 1,
+  "RecoveryMinutes": 3,
+  "UsePacketLoss": true,
+  "UseLatency": true,
+  "UseThrottle": false,
+  "NetworkEffects": {
+    "MinLatencyMS": 200,
+    "MaxLatencyMS": 800,
+    "MinPacketLoss": 10,
+    "MaxPacketLoss": 30,
+    "MinThrottleKbps": 50,
+    "MaxThrottleKbps": 200
+  },
+  "Advanced": {
+    "EnableJitter": true,
+    "RandomizeEffects": true,
+    "GradualDegradation": false
+  }
+}

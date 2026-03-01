@@ -53,3 +53,16 @@
 /hikvisionVideo/webVideoCtrl/hkvVideoVue/node_modules
 /hikvisionVideo/webVideoCtrl/hkvVideoVue/package-lock.json
 
+
+# Ignore common files in directory
+***.iml
+**.gradle
+**local.properties
+**.idea
+**.DS_Store
+**build
+**captures
+**.externalNativeBuild
+**.cxx
+**local.properties
+

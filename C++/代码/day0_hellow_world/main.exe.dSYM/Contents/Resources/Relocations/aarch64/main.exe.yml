@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sandy/workspace/github/Monica/C++/代码/hellow_world/main.exe"
+relocations:     []
+...
