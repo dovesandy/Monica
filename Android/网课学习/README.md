@@ -18,3 +18,12 @@ Room的适用场景
 
 视频教程SharedPreferences
 <https://www.bilibili.com/video/BV18K411F7Le/?spm_id_from=333.337.search-card.all.click&vd_source=7ff9030a02efb2898028adaadd0ebb1d>
+
+## AI上下文
+
+0. 一个简单的SharedPreferences使用教程例子，有以下功能
+1. 新建一个SharedPreferencesStore文件用于书写SharedPreferences增删改查方法
+2. 添加一个输入框，用于交互
+3. 添加一个名字为“保存”的按钮，当用户输入字符串后，点击保存按钮存在SharedPreferences
+4. 保存成功后，在屏幕底下提示保存成功的提示“数据已经保存成功”
+5. 添加一个名字为“获取”的按钮，当用户点击获取按钮后，把刚刚保存的数据通过提示展示在消息中
